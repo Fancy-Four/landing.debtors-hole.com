@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Долговая яма</title>
+	<meta name="description" content="Сервис для разделения счетов из ресторанов и управления долгами">
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<style>
+
+		.cloud-cnt {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.cloud-elm {
+			width: 350px;
+			height: 250px;
+			align-self: center;
+			margin: 0 15px;
+		}
+
+		.rgt-cnt {
+			flex-direction: row-reverse;
+			justify-content: flex-start;
+		}
+
+		.lft-cnt {
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+
+		.cloud-text {
+			align-self: center
+		}
+
+		.logo {
+			vertical-align: middle;
+			height: 40px;
+			margin: -5px 0 0 10px;
+		}
+
+		@media screen and (min-width: 0px) {
+			.cloud-cnt {
+				flex-wrap: wrap;
+			}
+
+			.cloud-text {
+				width: 350px;
+				text-align: center;
+				margin: 5px 0 30px;
+			}
+		}
+
+		@media screen and (min-width: 576px) {
+			.cloud-cnt {
+				flex-wrap: nowrap;
+			}
+
+			.cloud-text {
+				width: auto;
+			}
+
+			.cloud-elm {
+				margin: 0;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			.cloud-elm {
+				margin: 0 15px;
+			}
+		}
+
+	</style>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			M.Parallax.init(document.querySelectorAll('.parallax'), {});
+			M.FloatingActionButton.init(document.querySelectorAll('.fixed-action-btn'), {});
+		});
+	</script>
+</head>
+<body>
+<nav>
+	<div class="nav-wrapper blue darken-4">
+		<a href="/" class="brand-logo">
+			<img class="logo" src="images/icon.png" alt="">
+			Долговая яма
+		</a>
+	</div>
+</nav>
+
+<div class="fixed-action-btn">
+	<a href="https://debtors-hole.com" title="переход на сайт debtorse-hole" class="btn-floating btn-large red pulse">
+		<i class="large material-icons">arrow_forward</i>
+	</a>
+</div>
+
+<div class="section teal lighten-5">
+	<div class="row container flow-text">
+		<h2 class="header">Как быстро разделить счет</h2>
+		<div style="text-align: right">
+			<h3 class=""> из ресторана или поездки?</h3>
+		</div>
+		<hr style="margin-bottom: 50px">
+		<p class="grey-text text-darken-3 lighten-3">Мы подскажем))</p>
+		<p><b>"ДОЛГОВАЯ ЯМА"</b> это сервис, предназначенный именно для этого.</p><br>
+		<p class="grey-text text-darken-3 lighten-3">Любите отдыхать компанией?..</p>
+	</div>
+</div>
+<div class="parallax-container">
+	<div class="parallax"><img src="images/pic1.jpg"></div>
+</div>
+<div class="section teal lighten-5">
+	<div class="row container flow-text">
+		<p class="grey-text text-darken-3 lighten-3">...но после приходится делить счета, расходуя нервы и время</p>
+		<p class="grey-text text-darken-3 lighten-3">да и еще помнить кто должен вам а кому должны вы...</p>
+		<p>
+			<img width="100%" src="images/mem2.png" alt="">
+		</p>
+		<h3>Мы поможем разобраться с этой рутиной!</h3>
+	</div>
+</div>
+<div class="parallax-container">
+	<div class="parallax"><img src="images/pic4.jpg"></div>
+</div>
+<div class="section teal lighten-5">
+	<div class="row container  flow-text">
+		<div style="background: url('images/bg1.png') no-repeat center 100px">
+			<div class="cloud-cnt rgt-cnt">
+				<img class="cloud-elm" src="images/st1.png" alt="">
+				<p class="cloud-text">Просто создайте счет</p>
+			</div>
+			<div class="cloud-cnt lft-cnt">
+				<img class="cloud-elm" src="images/st2.png" alt="">
+				<p class="cloud-text">внесите кто и сколько заплатил</p>
+			</div>
+			<div class="cloud-cnt rgt-cnt">
+				<img class="cloud-elm" src="images/st3.png" alt="">
+				<p class="cloud-text">отметьте траты по участниках</p>
+			</div>
+			<div class="cloud-cnt lft-cnt">
+				<img class="cloud-elm" src="images/st4.png" alt="">
+				<p class="cloud-text">поделитесь ссылкой на готовый расчет</p>
+			</div>
+			<div class="cloud-cnt rgt-cnt">
+				<img class="cloud-elm" src="images/st5.png" alt="">
+				<p class="cloud-text">фиксируйте кто и сколько вернул</p>
+			</div>
+		</div>
+		<p class="">
+			Все абсолютно прозрачно, да еще и пересчитывается автоматически при любых изменениях внесенных в счет
+		</p>
+	</div>
+</div>
+<div class="parallax-container">
+	<div class="parallax"><img src="images/pic5.jpg"></div>
+</div>
+
+<footer class="page-footer blue darken-4">
+	<div class="container">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">Debtors hole</h5>
+				<p class="grey-text text-lighten-4">Сервис для разделения счетов между участниками и управлениями
+					долгами</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+			<h6 class="white-text">
+				Использованы материалы с
+				<a class="grey-text text-lighten-3" href="https://unsplash.com">UNSPLASH</a>
+			</h6>
+			<ul>
+			<li><a class="grey-text text-lighten-3" href="https://unsplash.com/@kchance8">Kelsey Chance</a></li>
+			<li><a class="grey-text text-lighten-3" href="https://unsplash.com/@rawpixel">rawpixel</a></li>
+			<li><a class="grey-text text-lighten-3" href="https://unsplash.com/@bundo">Bundo Kim</a></li>
+			<li><a class="grey-text text-lighten-3" href="https://unsplash.com/@coopery">Mohamed Nohassi</a></li>
+			<li><a class="grey-text text-lighten-3" href="https://unsplash.com/@miinyuii">Duy Pham</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="footer-copyright">
+		<div class="container">
+			© 2019 Copyright
+		</div>
+	</div>
+</footer>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
